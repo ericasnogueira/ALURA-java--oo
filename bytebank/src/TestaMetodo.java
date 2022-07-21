@@ -26,7 +26,9 @@ public class TestaMetodo {
         System.out.println("Valor atual da conda Usuario : "+contaUsuario.saldo);
         System.out.println("Valor atual da conta Erica : " + contaErica.saldo);
 
-
+        System.out.println();
+        contaUsuario.titular = "Paulo Silva"; // nome do dono da conta
+        System.out.println(contaUsuario.titular);
 
     }
 }
