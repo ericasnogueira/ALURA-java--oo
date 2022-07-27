@@ -1,6 +1,6 @@
 public class Conta {
     //atributos
-    double saldo;
+    private double saldo;
     int agencia ;
     int numero;
     Cliente titular; //
@@ -35,11 +35,16 @@ public class Conta {
             return true;
         }else {
             System.out.println("Não tem dinheiro suficiente para a transferencia");
-            return  false;
+            return false;
         }
-
-
-
-
     }
+    //metodo que ira mostrar o saldo já que ele esta private não tem como só chamando ele no main só com metodo agora
+    /*public double mostraSaldo(){ //
+        return this.saldo;
+    }
+    */ // em vez de fazer um metodo como o de cima pode usar o get
+    public double getSaldo() {
+        return saldo;
+    }
+
 }
