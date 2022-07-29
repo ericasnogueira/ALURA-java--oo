@@ -1,3 +1,4 @@
+package encapsulado;
 public class TestaValores {
     public static void main(String[] args) {
         // por conta do construtor com os parametros

@@ -1,4 +1,4 @@
-import javax.swing.plaf.synth.SynthOptionPaneUI;
+package encapsulado;
 
 public class Conta {
     //atributos

@@ -1,3 +1,4 @@
+package bytebank;
 public class Conta {
     //atributos
     double saldo;

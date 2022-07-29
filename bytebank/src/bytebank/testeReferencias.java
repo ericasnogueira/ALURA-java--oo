@@ -1,3 +1,4 @@
+package bytebank;
 public class testeReferencias {
     public static void main(String[] args) {
         Conta primeiraConta = new Conta();
