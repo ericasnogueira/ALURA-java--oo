@@ -4,16 +4,13 @@ public class Funcionario {
     //atributos
     private String nome;
     private String cpf;
-    private double salario;
-
-    //construtor
-
+    protected double salario; //protected = publico para os filhos, para os outros são privati
 
     //metodos
 
     //metodos de bonus
     public  double boniFicacao(){
-        return this.salario * 0.1; //0.1 = 10%
+        return this.salario * 0.05; //0.1 = 5    %
     }
 
     public String getNome() {

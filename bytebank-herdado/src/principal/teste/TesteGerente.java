@@ -13,7 +13,7 @@ public class TesteGerente {
         //pegando os atributos da classe funcionario e usando já que foi herdado pelo o gerente
         g1.setNome("Erica SN");
         g1.setCpf("12365245632");
-        g1.setSalario(6000.0);
+        g1.setSalario(5000.0);
 
         System.out.println(g1.getNome());
         System.out.println(g1.getCpf());
@@ -31,5 +31,8 @@ public class TesteGerente {
 
         System.out.println(autenticou);
 
+
+        //mostrando a bonificação
+        System.out.println(g1.boniFicação());
     }
 }

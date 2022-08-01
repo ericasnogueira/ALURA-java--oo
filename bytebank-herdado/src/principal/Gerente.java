@@ -26,6 +26,11 @@ public class Gerente extends Funcionario{
         this.senha = senha;
     }
     //metodos de bonus
-
-
+    public double boniFicação(){
+        //usando o metodo da classe funcionario
+        //super.bonificacao estou chamando o metododa da classe
+        return getSalario() + (super.boniFicacao()) ;
+        //getSalario é da classe funcionario 
+        // super faz referença para a mãe(que seria funcionario) já que salaria é da daquela class
+    }
 }
