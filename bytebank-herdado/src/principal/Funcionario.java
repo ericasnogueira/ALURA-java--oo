@@ -9,7 +9,7 @@ public class Funcionario {
     //metodos
 
     //metodos de bonus
-    public  double boniFicacao(){
+    public  double getBonificacao(){
         return this.salario * 0.05; //0.1 = 5    %
     }
 

@@ -33,6 +33,6 @@ public class TesteGerente {
 
 
         //mostrando a bonificação
-        System.out.println(g1.boniFicação());
+        System.out.println(g1.getBonificacao());
     }
 }

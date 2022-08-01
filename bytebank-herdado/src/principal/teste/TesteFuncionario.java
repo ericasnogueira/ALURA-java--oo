@@ -16,6 +16,6 @@ public class TesteFuncionario {
 
         System.out.println(funcionario.getNome());
         System.out.println(funcionario.getSalario());
-        System.out.println("A sua bonificação foi  de : "+funcionario.boniFicacao());// chamando o metodo
+        System.out.println("A sua bonificação foi  de : " + funcionario.getBonificacao());// chamando o metodo
     }
 }
