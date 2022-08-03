@@ -5,8 +5,10 @@ public class ControleBonificacao {
     private double soma;
 
 
+    // Quanto a empresa ira pagar em bonificação
+    // a bonificação total
     public void registra(Funcionario funcionario){
-        double boni = funcionario.getBonificacao();// não sei qual metodo ira ser chamado pq depende do objeto
+        double boni = funcionario.getBonificacao();
         this.soma = this.soma + boni;
 
     }

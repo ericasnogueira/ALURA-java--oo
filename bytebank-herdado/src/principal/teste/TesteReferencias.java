@@ -23,9 +23,33 @@ public class TesteReferencias {
         ControleBonificacao controle = new ControleBonificacao();
 
         controle.registra(g1);
-        controle.registra(funcionario);
-        controle.registra(video);
+        System.out.println("Mostrando a bonificação do gerente ");
+        System.out.println("Sua bonificação foi adicionada no metodo registra e mostrado pelo getSoma");
+        System.out.println(controle.getSoma());
+        System.out.println("//////////////////////////////////////////////////");
 
+        controle.registra(funcionario);
+        System.out.println("Mostrando a soma da bonificação do gerente e do funcionario juntos ");
+        System.out.println("Sua bonificação foi adicionada no metodo registra e mostrado pelo getSoma");
+        System.out.println(controle.getSoma());
+        System.out.println("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%");
+
+        controle.registra(video);
+        System.out.println("Mostrando a soma da bonificação do Gerente  + funcionario + editor de video ");
+        System.out.println("Sua bonificação foi adicionada no metodo registra e mostrado pelo getSoma");
+        System.out.println(controle.getSoma());
+        System.out.println("//////////////////////////////////////////////////");
+
+
+
+        System.out.println("============Pegando diretamento do Metodo de cada classe=================");
+        System.out.println("Bonificação do Gerente : " + g1.getBonificacao());
+        System.out.println("Bonificação do Funcionario : " + funcionario.getBonificacao());
+        System.out.println("Bonificação do Editor de Video : " + video.getBonificacao());
+        System.out.println("=========================================================================");
+
+        System.out.println("Pegando a soma de todas as bonificações na classe ControleBonificacao pelo get");
+        System.out.println("Mostrando todas as bonificações : ");
         System.out.println(controle.getSoma());
     }
 }

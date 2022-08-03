@@ -10,7 +10,8 @@ public class Funcionario {
 
     //metodos de bonus
     public  double getBonificacao(){
-        return this.salario * 0.05; //0.1 = 5    %
+
+        return this.salario * 0.05; //0.5 = 5%
     }
 
     public String getNome() {
