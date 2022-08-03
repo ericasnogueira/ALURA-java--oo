@@ -29,7 +29,7 @@ public class Gerente extends Funcionario{
     public double getBonificacao(){
         //usando o metodo da classe funcionario
         //super.bonificacao estou chamando o metododa da classe
-        return super.getBonificacao() + super.getSalario();
+        return  super.getSalario();
         //getSalario é da classe funcionario
         // super faz referença para a mãe(que seria funcionario) já que salaria é da daquela class
     }

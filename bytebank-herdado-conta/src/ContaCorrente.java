@@ -8,6 +8,16 @@ public class ContaCorrente extends  Conta{
         super(agencia,numero);//chamada do contrutor da classe MÃE(padrão ou especifico)
     }
 
+    @Override
+    public void deposita(double deposito) {
+       if(deposito >= 30){
+           super.saldo = super.saldo + deposito;
+           System.out.println("Deposito feito com SUCESSO");
+       } else {
+           System.out.println("Valor do deposito  só maior que 30");
+       }
+    }
+
     @Override // sobreescrever um metodo
     public boolean saca(double valor) {
         double valorASacar = valor + 0.2;

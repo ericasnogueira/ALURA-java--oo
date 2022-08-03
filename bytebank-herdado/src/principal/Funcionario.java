@@ -1,6 +1,7 @@
 package principal;
 
-public class Funcionario {
+//não pode instanciar dessa classe, pq é abstrata
+public abstract  class Funcionario {
     //atributos
     private String nome;
     private String cpf;
@@ -9,10 +10,12 @@ public class Funcionario {
     //metodos
 
     //metodos de bonus
-    public  double getBonificacao(){
 
-        return this.salario * 0.05; //0.5 = 5%
-    }
+    //metodo abstrato, exite só para os filhos
+    //metodo sem corpo, não há imprementação, o filhos são obrigados a imprementa ela nas suas classes
+    public abstract double getBonificacao();
+
+
 
     public String getNome() {
 

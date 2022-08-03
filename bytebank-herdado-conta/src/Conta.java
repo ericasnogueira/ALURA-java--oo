@@ -1,10 +1,11 @@
-public class Conta {
+public abstract class Conta {
     //atributos
-    private double saldo;
+    protected double saldo;
     private int agencia ;
     private int numero = 144;
+
     //static = da classe // é o atributo da classe
-    private static int total;
+    private static int total = 0;
     private Cliente titular; //
 
     //CONSTRUTORES == a inicialização de atributos é a principal responsabilidade do construtor.
@@ -23,18 +24,9 @@ public class Conta {
     // metodos
     //metodos == comportamentos
     // como não vai retorna nada em resposta esta void
-    void deposita(double deposito){
-        if (deposito >= 30) {
-            this.saldo += deposito; // a palavra this não está no deposito pq ela não é um atributo de um objeto
-            System.out.println("================================");
-            System.out.println("Deposito realizado com sucesso ");
-            System.out.println("Valor : " + deposito + " adicionado na conta");
 
-        } else {
-            //depositos menores que 30
-            System.out.println("Não é possivel fazer depositos de valores menores que R$30");
-        }
-    }
+    //metodo absatrato na classe mãe , faz com que os filhos impremente o metodo em sua classes
+   public abstract void   deposita(double deposito);
 
     //quais informações você precisa passar ?
     // se conseguiu sacar ou não// pq pode ter dinheiro ou não na conta

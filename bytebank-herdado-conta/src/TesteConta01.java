@@ -11,7 +11,7 @@ public class TesteConta01 {
 
         System.out.println("==================");
         //transferindo
-        cc.transfere(10.0,cp);
+        cc.transfere(50.0,cp);
 
         System.out.println("=========================");
         System.out.println("Saldo da conta corrente é "+cc.getSaldo());// mostrando o saldo da conta cp
