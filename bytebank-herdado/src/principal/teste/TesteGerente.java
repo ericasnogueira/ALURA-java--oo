@@ -21,7 +21,7 @@ public class TesteGerente {
 
 
         System.out.println("=====================");
-
+/*
         g1.setSenha(6125666);
         //usando só metodo da classe gerente
         g1.autentica(6125666);
@@ -34,5 +34,7 @@ public class TesteGerente {
 
         //mostrando a bonificação
         System.out.println(g1.getBonificacao());
+ */
     }
+
 }
