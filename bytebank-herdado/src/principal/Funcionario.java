@@ -1,6 +1,7 @@
 package principal;
 
 //não pode instanciar dessa classe, pq é abstrata
+//classes abstratas não são OBRIGADAS a ter os metodos abstratos das superclasses
 public abstract  class Funcionario {
     //atributos
     private String nome;

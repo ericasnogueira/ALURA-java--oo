@@ -1,21 +1,15 @@
 package principal;
 
-//classes abstratas não são OBRIGADAS a ter os metodos abstratos das superclasses
-public abstract class Autenticavel  {
+//contrato Autenticavel
+    //quem assina esse contrato, precisa implementar
+        //metodo setSenha
+        //metodo autentica
+public abstract interface Autenticavel   {
 
-    private int senha;
 
-    public void setSenha(int senha) {
-        this.senha = senha;
-    }
+// todos os metodos de um INTERFACE são abstract
 
-    public boolean autentica(int senha){
-        if(this.senha == senha){
-            System.out.println("Senha correta");
-            return true;
-        } else {
-            System.out.println("Senha incorreta");
-            return false;
-        }
-    }
+    public abstract void setSenha(int senha);
+
+    public abstract boolean autentica(int senha);
 }

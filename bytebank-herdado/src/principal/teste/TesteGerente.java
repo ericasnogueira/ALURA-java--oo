@@ -1,5 +1,6 @@
 package principal.teste;
 
+import principal.Autenticavel;
 import principal.Gerente;
 
 import java.util.Locale;
@@ -11,6 +12,10 @@ public class TesteGerente {
         Gerente g1 = new Gerente();
         //como gerente herda do funcionario ele já aparece tanto os set como os get como se fosse o dele
         //pegando os atributos da classe funcionario e usando já que foi herdado pelo o gerente
+
+        Autenticavel refenca = new Gerente();
+
+
         g1.setNome("Erica SN");
         g1.setCpf("12365245632");
         g1.setSalario(5000.0);
@@ -21,7 +26,7 @@ public class TesteGerente {
 
 
         System.out.println("=====================");
-/*
+
         g1.setSenha(6125666);
         //usando só metodo da classe gerente
         g1.autentica(6125666);
@@ -34,7 +39,7 @@ public class TesteGerente {
 
         //mostrando a bonificação
         System.out.println(g1.getBonificacao());
- */
+
     }
 
 }
