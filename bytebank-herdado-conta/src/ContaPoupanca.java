@@ -1,5 +1,5 @@
 
-public class ContaPoupanca extends Conta{
+public class ContaPoupanca extends Conta {
 
 
     public ContaPoupanca(int agencia, int numero){
@@ -15,4 +15,6 @@ public class ContaPoupanca extends Conta{
             System.out.println("Valor do deposito  só maior que 30");
         }
     }
+
+
 }
