@@ -1,7 +1,16 @@
 package principal;
 
 public class Administrador extends Funcionario implements Autenticavel {
-    private  int senha;
+
+
+    private AutenticacaoUtil autencador;
+
+
+    //construtor padrão
+    public Administrador(){
+        this.autencador = new AutenticacaoUtil();
+    }
+
     @Override
     public double getBonificacao() {
         return 50;
@@ -9,16 +18,11 @@ public class Administrador extends Funcionario implements Autenticavel {
 
     @Override
     public void setSenha(int senha) {
-        this.senha = senha;
+       this.autencador.setSenha(senha);
     }
 
     @Override
     public boolean autentica(int senha) {
-        if (this.senha == senha){
-            System.out.println("Senha correta ");
-            return true;
-        } else {
-            return false;
-        }
+        return this.autencador.autentica(senha);
     }
 }

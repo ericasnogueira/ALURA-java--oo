@@ -5,19 +5,21 @@ package principal;
 public class Cliente implements Autenticavel {
 
 
-    private int senha;
+    private  AutenticacaoUtil autenticador;
+
+    //construtor padrão
+    public  Cliente(){
+        this.autenticador = new AutenticacaoUtil();
+    }
     @Override
     public void setSenha(int senha) {
-        this.senha = senha;
+        //quem vai guarda agora a senha é o autenticacaoUtil
+        this.autenticador.setSenha(senha);
     }
 
     @Override
     public boolean autentica(int senha) {
-        if (this.senha == senha){
-            System.out.println("Cliente pode entrar no sistama");
-            return true;
-        } else {
-            return false;
-        }
+       boolean autenticou =  this.autenticador.autentica(senha);
+            return autenticou;
     }
 }

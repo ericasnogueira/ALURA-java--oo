@@ -6,8 +6,13 @@ import java.awt.font.TextHitInfo;
 //gerente é um fucionairo// gerente herda da class Funcionario, assina o contrato Autenticavel, é um AUTENTICAVEL
 public class Gerente extends Funcionario implements Autenticavel{
     //atributos
-    private int senha;
-    //construtor
+    private AutenticacaoUtil autenticador;
+
+
+    //construtor padrão
+    public Gerente(){
+        this.autenticador = new AutenticacaoUtil();
+    }
 
 
     //metodos
@@ -24,16 +29,11 @@ public class Gerente extends Funcionario implements Autenticavel{
 
     @Override
     public void setSenha(int senha) {
-        this.senha = senha;
+        this.autenticador.setSenha(senha);
     }
 
     @Override
     public boolean autentica(int senha) {
-        if (this.senha == senha){
-            System.out.println("Senha correta");
-            return true;
-        } else {
-            return false;
-        }
+       return this.autenticador.autentica(senha);
     }
 }

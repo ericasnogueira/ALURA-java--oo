@@ -27,7 +27,7 @@ public class TesteSistema {
         sistemaInterno.autentica(cliente);
 
 
-        
+
         System.out.println("=============================================");
         Autenticavel r = new Gerente();
         Autenticavel aaa = new Cliente();
