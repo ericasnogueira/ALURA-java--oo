@@ -14,5 +14,5 @@ public class Triangulo {
         double resultado = Math.sqrt(p * (p - a) * (p - b) * (p - c));
         return  resultado;
     }
-    
+
 }
