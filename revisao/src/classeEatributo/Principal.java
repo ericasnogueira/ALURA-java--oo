@@ -21,7 +21,7 @@ public class Principal {
         y.b = entrada.nextDouble();
         y.c = entrada.nextDouble();
 
-        //calculando a area do triangulo x
+
         double p = (x.a + x.b + x.c) / 2.0;
         double areaX = Math.sqrt(p * (p - x.a) * (p - x.b) * (p - x.c));
 
