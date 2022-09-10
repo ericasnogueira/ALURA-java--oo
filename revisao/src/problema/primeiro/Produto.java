@@ -16,7 +16,6 @@ public class Produto {
 
     public void removendoProduto(int quantidade){
         quantidadeEstoque = quantidadeEstoque - quantidade;
-
     }
 
     public String texto(){

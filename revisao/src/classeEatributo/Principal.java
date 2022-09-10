@@ -37,7 +37,5 @@ public class Principal {
         } else {
             System.out.println("Area Y maior");
         }
-
-
     }
 }
