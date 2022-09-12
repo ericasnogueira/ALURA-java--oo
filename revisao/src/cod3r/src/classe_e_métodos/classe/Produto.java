@@ -9,6 +9,7 @@ public class Produto {
 
 
     //metodo para o desconto
+    // botar o metodo aqui foi minha ideia
     public double valorFinal(){
         double valorInicial = preco * desconto;
         double valorFinal;
