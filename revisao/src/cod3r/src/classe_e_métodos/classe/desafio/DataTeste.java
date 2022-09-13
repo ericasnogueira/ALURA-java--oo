@@ -6,13 +6,13 @@ public class DataTeste {
         Data data = new Data();
         Data data2 = new Data();
 
-        data.dia = 10;
-        data.mes = 07;
-        data.ano = 1599;
+        data.dia = 7;
+        data.mes = 11;
+        data.ano = 2021;
 
-        data2.dia = 15;
-        data2.mes = 03;
-        data2.ano = 1456;
+        data2.dia = 31;
+        data2.mes = 12;
+        data2.ano = 2020;
 
         System.out.println(data.obterDataFormatada());
         System.out.println(data2.obterDataFormatada());
