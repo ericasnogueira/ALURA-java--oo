@@ -7,16 +7,14 @@ public class DataTeste {
         Data data2 = new Data();
 
         data.dia = 10;
-        data.mes = "Abril";
+        data.mes = 07;
         data.ano = 1599;
 
         data2.dia = 15;
-        data2.mes = "Junho";
+        data2.mes = 03;
         data2.ano = 1456;
 
-        System.out.println(data.dia + "/" + data.mes+ "/" + data.ano);
-        System.out.println(data2.dia + "/" + data2.mes+ "/" + data2.ano);
-
-
+        System.out.println(data.obterDataFormatada());
+        System.out.println(data2.obterDataFormatada());
     }
 }
