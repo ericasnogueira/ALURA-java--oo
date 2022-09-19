@@ -1,7 +1,6 @@
 package membros_estáticos.exemplo02;
 
 import membros_estáticos.exemplo02.util.Calculator;
-import metodo.parametros.Calculadora;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -20,7 +19,8 @@ public class Principal {
             // VERSÃO 02
             Locale.setDefault(Locale.US);
             Scanner entrada = new Scanner(System.in);
-            Calculator calculator = new Calculator();
+
+            Calculator calculator = new Calculator(); //instanciando a classe Calculator
 
             double raio = entrada.nextDouble();
 
