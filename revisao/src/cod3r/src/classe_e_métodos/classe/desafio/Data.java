@@ -9,4 +9,9 @@ public class Data {
     public  String obterDataFormatada (){
         return String.format("%d/%d/%d", dia,mes,ano);
     }
+
+    // pode chamar metodo dentro de metodo
+    void imprimirDataFormatada(){
+        System.out.println(obterDataFormatada());
+    }
 }

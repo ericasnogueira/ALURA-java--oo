@@ -16,5 +16,8 @@ public class DataTeste {
 
         System.out.println(data.obterDataFormatada());
         System.out.println(data2.obterDataFormatada());
+        System.out.println();
+        data2.imprimirDataFormatada();
+        data.imprimirDataFormatada();
     }
 }
