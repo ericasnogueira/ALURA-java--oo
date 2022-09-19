@@ -19,12 +19,11 @@ public class Principal {
 
         System.out.print("Qual é o preço do dolar?");
         double dolar = entrada.nextDouble();
-        dolar = CurrencyConverter.setDolar(dolar);
+
 
         System.out.print("Quantos dolares irá comprar?");
-        double comprar = entrada.nextDouble();
-        comprar = CurrencyConverter.setComprarDolar(comprar);
+        double comprarDolar = entrada.nextDouble();
 
-        System.out.printf("O total em reais a pagar é : %.2f%n", CurrencyConverter.valorPago());
+        System.out.printf("O total em reais a pagar é : %.2f%n", CurrencyConverter.valorPago(dolar,comprarDolar));
     }
 }
