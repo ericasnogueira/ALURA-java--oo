@@ -1,7 +1,6 @@
 package membros_estáticos.exemplo01;
 
 import java.util.Locale;
-import java.util.PrimitiveIterator;
 import java.util.Scanner;
 
 public class Principal {
