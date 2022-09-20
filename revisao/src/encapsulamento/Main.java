@@ -1,11 +1,11 @@
-package Construtores.problemaExemplo;
+package encapsulamento;
 
-import Construtores.problemaExemplo.entities.Produto;
+import encapsulamento.entities.Produto;
 
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Principal {
+public class Main {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
         Scanner input = new Scanner(System.in);
@@ -19,8 +19,17 @@ public class Principal {
         double preco = input.nextDouble();
 
 
+
         Produto produto = new Produto(nome,preco);// informando os dados do produto na instanciação
         // do mesmo
+
+        produto.setNome("computador");
+        System.out.println();
+        System.out.println("Atualização do nome : " + produto.getNome());
+
+        // alterando e mostrando o novo preço do produto
+        produto.setPreco(1200.00);
+        System.out.println( produto.getNome() +" R$ " + produto.getPreco());
 
         System.out.println();
         // CHAMANDO O METODO TEXTO
@@ -47,3 +56,4 @@ public class Principal {
         input.close();
     }
 }
+
