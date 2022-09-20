@@ -10,6 +10,10 @@ public class Produto {
         this.preco = preco;
         this.quantidadeEstoque = quantidadeEstoque;
     }
+    public Produto(String nome, double preco) {
+        this.nome = nome;
+        this.preco = preco;
+    }
 
     public double totalValor(){
             double totalValor;

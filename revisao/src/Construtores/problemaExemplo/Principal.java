@@ -20,12 +20,8 @@ public class Principal {
         System.out.print("Preço : ");
         double preco = input.nextDouble();
 
-        System.out.print("Quantidade no estoque :");
-        int quantidadeEstoque = input.nextInt();
 
-
-
-        Produto produto = new Produto(nome,preco,quantidadeEstoque);// informando os dados do produto na instanciação
+        Produto produto = new Produto(nome,preco);// informando os dados do produto na instanciação
         // do mesmo
 
         System.out.println();
