@@ -4,6 +4,7 @@ public class Produto {
     private String nome;
     private double preco;
     private int quantidadeEstoque;
+    private static double teste;
 
     public Produto(String nome, double preco, int quantidadeEstoque) {
         this.nome = nome;
@@ -16,7 +17,6 @@ public class Produto {
     }
 
     //set e get
-
 
     // retornando o atributo
     public String getNome() {
@@ -60,5 +60,4 @@ public class Produto {
                 " Unidades , total: $ " +
                 String.format("%.2f", totalValor());
     }
-
 }
