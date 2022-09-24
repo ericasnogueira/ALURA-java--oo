@@ -31,7 +31,7 @@ public class Banco {
 
     //get e set
     public String getNomeDoTitula() {
-        return nomeDoTitula;
+        return this.nomeDoTitula = nomeDoTitula;
     }
 
     public void setNomeDoTitula(String nomeDoTitula) {
@@ -50,7 +50,7 @@ public class Banco {
     public String atualizando(){
         return "Conta " + this.numeroConta +","+
                 " Titular: " + getNomeDoTitula() + ","+
-                String.format(" saldo: %.2f", this.valor);
+                String.format(" saldo: $ %.2f", this.valor);
     }
 
 }

@@ -15,8 +15,8 @@ public class Program {
         int numero = entrada.nextInt();
 
         System.out.print("Entre com o nome : ");
-        String nome = entrada.nextLine();
-        nome = entrada.nextLine(); // chamando novamente para ter quebra de linha
+        String nome = entrada.nextLine(); //chamando  para ter quebra de linha
+        nome = entrada.nextLine();
 
         System.out.print("Irá depositar um valor inicial (s/n)? ");
         String resposta = entrada.nextLine();
