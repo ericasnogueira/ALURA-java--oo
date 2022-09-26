@@ -21,14 +21,13 @@ public class Banco {
 
     private  int   numeroConta;
     private String nomeDoTitula;
-    private  double valor = 0;
+    private  double valor ;
 
     //construtor
     public Banco(int numeroConta, String nomeDoTitula) {
         this.numeroConta = numeroConta;
         this.nomeDoTitula = nomeDoTitula;
     }
-
     //get e set
     public String getNomeDoTitula() {
         return this.nomeDoTitula = nomeDoTitula;
@@ -39,12 +38,12 @@ public class Banco {
     }
     // metodos
 
-    public double saldoConta(double deposito){
-        return  this.valor += deposito;
+    public void saldoConta(double deposito){
+          this.valor += deposito;
     }
-    public double saqueDinherio(double saque){
+    public void saqueDinherio(double saque){
         double taxa = - 5.00;
-        return  this.valor -= saque - taxa ;
+         this.valor -= saque - taxa ;
     }
 
     public String atualizando(){
