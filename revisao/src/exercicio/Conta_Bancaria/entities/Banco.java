@@ -51,5 +51,4 @@ public class Banco {
                 " Titular: " + getNomeDoTitula() + ","+
                 String.format(" saldo: $ %.2f", this.valor);
     }
-
 }
