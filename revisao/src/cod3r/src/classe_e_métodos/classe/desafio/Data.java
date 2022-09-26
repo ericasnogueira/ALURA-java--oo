@@ -7,7 +7,8 @@ public class Data {
     int ano;
 
     public  String obterDataFormatada (){
-        return String.format("%d/%d/%d", dia,mes,ano);
+        String formato = "%d/%d/%d"; // variavel local
+        return String.format(formato, dia,mes,ano);
     }
 
     // pode chamar metodo dentro de metodo
