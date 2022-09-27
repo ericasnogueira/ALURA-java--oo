@@ -24,4 +24,12 @@ public class ContaPoupanca extends ContaComum{
     public void updateDoSaldo(){
            saldo += saldo * taxaDeJuros;
     }
+    /*
+    suponha que a operação de saque possui uma taxa no valor de 5.0. Entretanto, se a conta for do tipo poupança, esta
+     taxa não dever ser cobrada.
+    */
+    @Override
+    public void saque(double saque) {
+        saldo -= saque;
+    }
 }

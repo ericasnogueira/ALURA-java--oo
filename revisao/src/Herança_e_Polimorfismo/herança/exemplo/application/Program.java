@@ -34,10 +34,10 @@ public class Program {
         ContaEmpresas conta6  = (ContaEmpresas) conta4;
 
 
+        //((ContaEmpresas) comum2).emprestimo(100.00);-> assim vai
+        //conta02.emprestimo(100.0);
 
         //não funcionou pq -> a subclasse poupança não pertence a subclasse empresa
-        //((ContaEmpresas) comum2).emprestimo(100.00);-> assim vai
-        //empresas1.emprestimo(100.0);
         /* assim -> não vai pq contaPoupança Não é uma ContaEmpresa
         ContaEmpresas empresas2 = (ContaEmpresas) comum3;
         ((ContaEmpresas) comum3).emprestimo(100.00);
@@ -57,7 +57,6 @@ public class Program {
         /*
         explicação Pelo que eu entendi :
         a sub-classe pertence a superclasse -> vai funcionar
-
          */
     }
 }

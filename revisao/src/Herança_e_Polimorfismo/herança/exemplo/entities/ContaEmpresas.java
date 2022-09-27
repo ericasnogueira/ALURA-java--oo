@@ -37,4 +37,12 @@ public class ContaEmpresas extends ContaComum {
             //deposito(emprestimo);
         }
     }
+    /*
+    a regra para saque seja realizar o saque normalmente da superclasse, e descontar mais 2.0
+     */
+    @Override
+    public void saque(double saque) {
+        super.saque(saque); // reutilizando o código da superclasse
+        saldo -= 2.00;
+    }
 }
