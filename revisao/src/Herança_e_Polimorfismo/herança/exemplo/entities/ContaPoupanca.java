@@ -1,6 +1,7 @@
 package Herança_e_Polimorfismo.herança.exemplo.entities;
 
-public class ContaPoupanca extends ContaComum{
+//final -  não poder ser herdada por outra classe
+public final class ContaPoupanca extends ContaComum{
     private double taxaDeJuros;
 
 
@@ -29,7 +30,7 @@ public class ContaPoupanca extends ContaComum{
      taxa não dever ser cobrada.
     */
     @Override
-    public void saque(double saque) {
+    public final void saque(double saque) {
         saldo -= saque;
     }
 }
