@@ -25,6 +25,9 @@ public class Program {
         ContaComum conta4 = new ContaEmpresas(1003,"Bob",0.0,200.00);
         ContaComum conta5 = new ContaPoupanca(1004,"Ana",0.0,0.01);
 
+
+
+
         //DOWNCASTING
         //converter um objeto da superclasse para subclasse
 
@@ -53,6 +56,13 @@ public class Program {
             ContaPoupanca conta7 = (ContaPoupanca) conta5;
             conta7.updateDoSaldo();
             System.out.println("UPDATE");
+        }
+        // verificando se a conta4 pertence a instancia ContaEmpresa\
+        if (conta4 instanceof  ContaEmpresas){
+            ContaEmpresas conta7 = (ContaEmpresas) conta4;
+            conta7.emprestimo(40);
+            System.out.println(conta7.getSaldo());
+            System.out.println("Empretimo");
         }
         /*
         explicação Pelo que eu entendi :
