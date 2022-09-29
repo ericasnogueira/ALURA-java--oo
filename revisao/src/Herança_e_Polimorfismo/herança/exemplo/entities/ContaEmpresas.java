@@ -43,6 +43,6 @@ public class ContaEmpresas extends ContaComum {
     @Override
     public void saque(double saque) {
         super.saque(saque); // reutilizando o código da superclasse
-        saldo -= 2.00;
+        saldo -= 2.00;// está tirando 7 ( 5 da conta comum + 2 da conta empresa)
     }
 }
